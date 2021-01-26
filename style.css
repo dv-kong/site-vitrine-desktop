@@ -104,26 +104,127 @@ nav a {
 /* ABOUT */
 
 .container {
-    background-image: url(images/background-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
+  background-image: url(imagesLaura/background-about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
 
+}
+
+.bodyAbout{
+margin: 0;
 }
 
 h1 {
-    text-align: center;
-    font-size: 100%;
-}
-.photoBio {
-    width: 50%;
+  text-align: center;
+  font-size: 50px;
 }
 
-.imagesClient {
-  display: flex;
+.paraBio{
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+line-height: 2.5;
 }
+.photoBio {
+  width: 50%;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 100px;
+
+}
+
+.imagesClients {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin : 50px 50px;
+}
+
+.logo {
+width: 23%;
+height:100px;
+}
+
+
 section {
-    margin-top: 20px;
-    
+  margin-top: 100px;
+  
+}
+
+/* PAGE CONTACT */
+
+.bodyContact {
+display: block;
+padding:0;
+margin: 0;
+}
+.paraContact {
+line-height: 2.5;
+text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 50px;
+margin-top: 100px;
+}
+
+input {
+width: 500px;
+height: 40px;
+background: #EAEAEA;
+border-radius: 6px;
+}
+
+
+
+textarea {
+background: #EAEAEA;
+border-radius: 6px;
+width: 500px;
+
+}
+
+/* Footer */
+
+footer{
+background-color : white;
+margin-top: 100px;
+
+
+
+
+}
+
+.footerContent {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logoFooter {
+width: 40%;
+}
+
+.icone {
+width: 10%;
+}
+
+.paraFooter {
+color: black;
+}
+
+.submit, .inputFooter{
+width: 200px;
+height: 40px;
+}
+
+.inputFooter{
+margin-bottom: 30px;
 }
   
