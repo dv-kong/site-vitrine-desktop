@@ -4,73 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="produitsHtmlBody">
+
+
     <nav id="main">
         <ul>
-            <li class="logo"><a href="#">Laura F.</a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="logo"><a href="#">Teddy</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- purchase popup -->
+
     <div class="purchasePopup">
 
-
         <!-- main picture container -->
-        <figure class="itemDisplay">
-            <img src="img/rainfall-level-protec-arisawa.jpg" alt="">
-        </figure>
-        <!-- side buying options -->
-        <div class="buyingOptionsContainer">
-
-            <!-- firstSideContainer -->
-            <div class="sideContainer">
-                <img src="img/download2.png" alt="">
-                <p class="itemName">Poster</p>
-                <span class="itemPrice">30$</span>
+        <div class="itemDisplay">
+            <div class="imageTitleAndText">
+                <div class="imageAndButtons">
+                    <div class="nextItemButton, itemSwitchButton"></div>
+                    <div class="imagePlaceholder">
+                        <img class="productImg" src="images/07.jpg" alt="">
+                    </div>
+                    <!-- imagePlaceholder -->
+                    <div class="previousItemButton, itemSwitchButton"></div>
+                    <!-- previousItemButton -->
+                </div>
+                <div class="dotButtonsContainer">
+                    <span class="currentItemDotButtonSelection"></span>
+                    <span class="currentItemDotButtonSelection"></span>
+                    <span class="currentItemDotButtonSelection"></span>
+                </div>
+                <div class="aboutItem">
+                    <h2>"Work Title"</h2>
+                    <p>2021<br> Work description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iure repellendus rerum corrupti repellat placeat obcaecati beatae dolorem quasi minus natus eos libero reprehenderit ullam necessitatibus quaerat
+                        veritatis magnam nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iure repellendus rerum corrupti repellat placeat obcaecati beatae dolorem quasi minus natus eos libero reprehenderit ullam necessitatibus quaerat
+                        veritatis magnam nam.
+                    </p>
+                </div>
+                <!-- about item -->
             </div>
-            <!-- firstSideContainer -->
+            <!-- <div class="imageTitleAndText"> -->
 
-            <!-- secondSideContainer -->
-            <div class="sideContainer">
-                <img src="img/download2.png" alt="">
-                <p class="itemName">Poster</p>
-                <span class="itemPrice">30$</span>
+
+            <!-- side buying options -->
+            <div class="buyingOptionsContainer scrollable">
+                <!-- firstSideContainer -->
+                <div class="sideContainer ">
+                    <img class="sideContainerImg productCard " src="images/07.jpg" alt="">
+                    <p class="itemName ">Work</p>
+                    <span class="itemPrice "></span>
+                    <br>
+                    <a class="buyProduct openBuyWindow " href=" "></a>
+                </div>
+
+
+                <div class="sideContainer ">
+                    <img class="sideContainerImg productCard " src="images/cadre.png " alt="">
+                    <p class="itemName ">Frame</p>
+                    <span class="itemPrice ">30$</span>
+                    <br>
+                    <a class="buyProduct openBuyWindow " href=" ">Add to cart</a>
+                </div>
+
+                <div class="sideContainer ">
+                    <img class="sideContainerImg productCard " src="images/TSHIRT.png " alt="">
+                    <p class="itemName ">Shirt</p>
+                    <span class="itemPrice ">30$</span>
+                    <br>
+                    <a class="buyProduct openBuyWindow " href=" ">Add to cart</a>
+                </div>
+
+                <div class="sideContainer ">
+                    <img class="sideContainerImg productCard " src="images/mug.png " alt=" ">
+                    <p class="itemName ">Mug</p>
+                    <span class="itemPrice ">30$</span>
+                    <br>
+                    <a class="buyProduct openBuyWindow " href=" ">Add to cart</a>
+                </div>
+
+                <div class="sideContainer  ">
+                    <img class="sideContainerImg productCard" src="images/download2.png" alt=" ">
+                    <p class="itemName ">Sticker</p>
+                    <span class="itemPrice ">30$</span>
+                    <br>
+                    <a class="buyProduct openBuyWindow " href=" ">Add to cart</a>
+                </div>
+
+
+
             </div>
-            <!-- secondSideContainer -->
-
-            <!-- thirdSideContainer -->
-            <div class="sideContainer">
-                <img src="img/download2.png" alt="">
-                <p class="itemName">Poster</p>
-                <span class="itemPrice">30$</span>
-            </div>
-            <!-- thirdSideContainer -->
-
         </div>
-        <!-- side buying options -->
-
-        <div class="aboutItem">
-            <h2>"Work Title"</h2>
-            <p>Work description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iure repellendus rerum corrupti repellat placeat obcaecati beatae dolorem quasi minus natus eos libero reprehenderit ullam necessitatibus quaerat veritatis magnam
-                nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iure repellendus rerum corrupti repellat placeat obcaecati beatae dolorem quasi minus natus eos libero reprehenderit ullam necessitatibus quaerat veritatis magnam nam.
-            </p>
-
-        </div>
 
 
 
+
+
+        <span><a href=" ">Previous Work</a></span>
+        <span><a href=" ">Next Work</a></span>
     </div>
     <!-- purchase popup -->
 
+
+    <footer>
+        <div class="footerContent">
+
+            <img class="logoFooter" src="imagesLaura/logoFooter.png" alt="logo Footer">
+
+            <div class="block2">
+                <p class="paraFooter">Suis-moi sur les réseaux!</p>
+                <img class="icone" src="icones/facebook.svg" alt="icone">
+                <img class="icone" src="icones/twitter.svg" alt="icone">
+                <img class="icone" src="icones/youtube.svg" alt="icone">
+                <img class="icone" src="icones/instagram.svg" alt="icone">
+            </div>
+            <div class="block3">
+                <p class="paraFooter">Inscris-toi à la Newsletter</p>
+                <input class="inputFooter" type="email" placeholder="E-mail" name="email">
+                <input class="submit" type="submit" placeholder="Envoyer">
+            </div>
+        </div>
+    </footer>
+
 </body>
-<script src="script.js">
+<script src="script.js ">
 </script>
 
 </html>
