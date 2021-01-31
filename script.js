@@ -18,12 +18,61 @@ const topOfNav = navBar.offsetTop;
 
 
 
-// SCRIPT FOR INDEX HTML
+// SCRIPT FOR INDEX HTML VNCENT
 
-// > when clicking on ELEMENT(img), send ELEMENT(img) to function toggleImageFullscreen
-// ... so that ELEMENT can have class Fullscreen
 
-// function toggleImageFullscreen(element) {
+let imageElement = document.querySelectorAll('img')
+let indexImg = document.querySelectorAll(".indexImg")
+let imageDisplay = document.querySelector(".productImg")
+let img = document.querySelectorAll(".productCard")
+let indexHtmlImageDisplayDivImg = document.querySelector(".indexHtmlImageDisplayDivImg")
+let indexHtmlImageDisplayDiv = document.querySelector(".indexHtmlImageDisplayDiv")
+let sideContainerImgArray = [];
+
+
+// closeButton onclick close parent div
+let closeButton = document.querySelector('.closeButton')
+
+// closeButton.addEventListener("click", function)
+
+// var x = document.getElementById("myDIV");
+// if (x.style.display === "none") {
+//   x.style.display = "block";
+// } else {
+//   x.style.display = "none";
+// indexHtmlImageDisplayDiv
+// style.display = 'none';
+// indexHtmlImageDisplayDiv.style.display = "none";
+
+// document.querySelector(".indexHtmlImageDisplayDiv").style.display = "block";
+
+// if page != index.html
+// x.removeEventListener("click", Respond);
+
+// SCRIPT IMPORTANT POUR INDEX
+// closeButton.addEventListener('click', openOrCloseIndexHtmlImageViewer)
+// let indexDisplayDiv = document.querySelector(".indexHtmlImageDisplayDiv")
+
+// function openOrCloseIndexHtmlImageViewer() {
+//     // if (indexDisplayDiv.style.display == "none";)
+
+//     document.querySelector(".indexHtmlImageDisplayDiv").style.display = "none";
+//     // indexDisplayDiv.style.display = "none";
+// }
+
+
+
+// (param1, paramN) => {
+//     let a = 1;
+//     return a + param1 + paramN;
+//  }
+
+// document.getElementById("myBtn").addEventListener("click", function() {
+//     document.getElementById("demo").innerHTML = "Hello World";
+// });
+
+
+// function toggleDisplayImageFullscreen(element) {
 //     element.classList.toggle("fullscreenImg");
 // }
 
@@ -33,7 +82,7 @@ const topOfNav = navBar.offsetTop;
 
 // })
 
-// END OF SCRIPT FOR INDEX HTML
+// END OF SCRIPT FOR INDEX HTML VNCENT
 
 
 // SCRIPT FOR PRODUITS.HTML
@@ -98,7 +147,7 @@ function previousOrNextItem(input) { // previous or next
 // ^^^^^^^
 
 // var imageElement = document.querySelector("img")
-// if (imageElement.hasAttribute("class="
+// if (imageElement.hasAttribute("class="   
 //         fullscreemImg ""))
 
 // if (imageElement.classList.contains("fullscreenImg")) {
@@ -123,20 +172,15 @@ function previousOrNextItem(input) { // previous or next
 // let imagePlaceholder = document.querySelector('.imagePlaceholder') <<<
 
 
-let imageElement = document.querySelectorAll('img')
+// imageElement.forEach((e) => {
+//     e.addEventListener("click", () => {
+//         // e.innerHTML = `<img class="productImg img" src="${this.product[img]}" alt="${this.product[alt]}">`
+//         // e.innerHTML = `<img src="images/02.jpg" alt="ilustration" height="370px" class="img">` <<
+//     })
+// })
 
-imageElement.forEach((e) => {
-    e.addEventListener("click", () => {
-        // e.innerHTML = `<img class="productImg img" src="${this.product[img]}" alt="${this.product[alt]}">`
-        // e.innerHTML = `<img src="images/02.jpg" alt="ilustration" height="370px" class="img">` <<
-    })
-})
-
-
-let imageDisplay = document.querySelector(".productImg")
 
 // let img = document.querySelectorAll(".img")
-let img = document.querySelectorAll(".productCard")
 
 
 
@@ -152,9 +196,10 @@ img.forEach((e) => {
         // img.setAttribute("src", "images/04.jpg");
 
         // imageDisplay.setAttribute("src", "images/04.jpg");
-        imgElSrc = e.src // get target img src
+        // imgElSrc = e.src // get target img src
 
-        imageDisplay.src = imgElSrc; // set imageDisplay src as target src
+        imageDisplay.src = e.src; // set imageDisplay src as target src
+
 
         // <img class="productImg" src="images/07.jpg" alt="">
     })
@@ -172,17 +217,14 @@ img.forEach((e) => {
 
 // Get all img in sideContainer and put then in arr
 // arr0 cycle
-let sideContainerImgArray = [];
-
-img.forEach((e) => {
 
 
-    sideContainerImgArray.push(e.src)
+// img.forEach((e) => {
+
+//     // sideContainerImgArray.push(e.src)
 
 
-
-
-})
+// })
 
 
 // function toggleClass() {
@@ -193,7 +235,17 @@ img.forEach((e) => {
 // div.classList.remove("foo", "bar", "baz");
 
 
-// CLICK TO FULLSCREEN IMG
+// CLICK TO DISPLAY IMG FULLSCREEN IN INDEX.HTML
+
+indexImg.forEach((el) => {
+    el.addEventListener("click", () => {
+
+        // elementImgSrc = el.src;
+        indexHtmlImageDisplayDivImg.src = el.src;
+        indexDisplayDiv.style.display = "flex";
+        // indexHtmlImageDisplayDiv.style.display = "flex";
+    })
+})
 
 
 
@@ -258,7 +310,7 @@ let contentManager = new ContentManager([
     { title: "A Taste of the Kitchen", subtitle: "Served Family Style", resume: "Vel nam odio dolorem, voluptas sequi minus quo tempore, animi est quia earum maxime. Reiciendisquae repellat, modi non, veniam.", img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/203277/first-course.jpg", ratings: [5, 3, 5, 4, 5, 3, 4, 1] }
 ]);
 
-contentManager.generateProducts();
+// contentManager.generateProducts();
 
 
 
