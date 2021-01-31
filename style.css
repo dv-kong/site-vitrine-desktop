@@ -246,9 +246,64 @@ input {
   background: #eaeaea;
   border-radius: 6px;
 }
-          
 
-            /* INDEX HMTL VINCENT */
+/* PRODUITS ROSA */
+
+.boutique {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  justify-content: space-around;
+}
+.oeuvre {
+  display: flex;
+  justify-content:flex-end;
+  width: 50%;
+}
+.oeuvre > img {
+  width: 60%;
+  height: auto; 
+  background-color:darkorange;
+  padding: 3%;
+  box-shadow: 10px 8px 9px 0px rgba(0,0,0,0.77);
+  margin-right: 10%;
+}
+
+.minis {
+  display: flex;
+  width: 50%;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.prod > img {
+  width: 15%;
+  height: auto;
+  padding: 1%;
+  margin: 2%;
+  background-color:blue;
+}
+.prod > p {
+  font-size: 2rem;
+  color: white;
+}
+.prix {
+  font-weight: bold;
+  color: #ffd700;
+}
+.prod {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ptitle {
+  font-size: 4rem;
+  color:white;
+}
+.buy {
+  width: 4rem;
+}
+/* INDEX HMTL VINCENT */
             
             .indexHtmlImageDisplayDiv {
               /* height: 40%; */
@@ -273,7 +328,7 @@ input {
           /* .indexHtmlImageDisplayDivBackground {} */
           
           .closeButton {
-              background-color: #ffffff;
+              background-color:chartreuse;
               border-radius: 42px;
               display: inline-block;
               cursor: pointer;
@@ -288,255 +343,10 @@ input {
           }
           
           .closeButton:hover {
-              background-color: #ffffff;
+              background-color:red;
           }
           
           .indexImg:hover {
               cursor: pointer;
           }
           /* INDEX HMTL VINCENT END */
-          
-          /* PRODUITS.HMTL */
-          
-          .produitsHtmlBody {
-              flex-wrap: nowrap;
-              display: block;
-          }
-          
-          .imageTitleAndText {
-              display: block;
-              /* max-height: 25%; */
-              /* height: 100vh; */
-          }
-          
-          .itemDisplay {
-              display: flex;
-              background-color: rgba(255, 255, 235, 0.144);
-              /* background-color: rgb(0, 0, 0); */
-              width: 100%;
-              height: 100%;
-          }
-          
-          .purchasePopup {
-              text-align: center;
-              flex-direction: row;
-              /* background-color: rgba(0, 0, 0, 0.658); */
-          }
-          
-          .imagePlaceholder {
-              background-color: rgba(0, 0, 0, 0.705);
-          }
-          
-          .scrollable {}
-          
-          img.productImg {
-              object-fit: contain;
-              /* max-width: 60%; */
-              max-height: 70vh;
-              min-height: 70vh;
-          }
-          
-          .productImg {
-              align-items: center;
-              max-height: 100vh;
-          }
-          
-          .imageAndButtons {}
-          
-          .itemSwitchButton {
-              background-color: #ffffff11;
-              /* display: flex; */
-              cursor: pointer;
-              color: #ffffff;
-              /* padding: 0.1% 0.55% 0.1% 0.55%; */
-              text-decoration: none;
-              position: absolute;
-              /* position: relative; */
-              height: 70vh;
-              /* width: .7%; */
-              width: 5%;
-              /* width: 20%; */
-          }
-          
-          .nextItemButton {
-              /* right: 100; */
-              /* top: 0; */
-          }
-          
-          .previousItemButton {
-              /* position: absolute; */
-          }
-          
-          .dotButtonsContainer {
-              display: flex;
-              justify-content: center;
-              /* position: absolute; */
-              height: 0;
-          }
-          
-          .currentItemDotButtonSelection {
-              background-color: #ffffff;
-              border-radius: 42px;
-              /* border: 1px solid #000000; */
-              /* display: inline-block; */
-              cursor: pointer;
-              color: #ffffff;
-              padding: 0.5%;
-              margin: 0 .1% 0 .1%;
-          }
-          
-          .currentItemDotButtonSelection:hover {
-              background-color: #f07d7d;
-              transition: all 0.1s;
-          }
-          
-          .currentItemDotButtonSelection:active {
-              position: relative;
-              top: 1px;
-          }
-          
-          .itemName {
-              font-weight: bold;
-          }
-          
-          .buyingOptionsContainer {
-              height: 100vh;
-              width: 25vw;
-              overflow: auto;
-              background-color: black;
-          }
-          
-          .itemSwitchButton:hover {
-              background-color: #7628db86;
-              transition: all 0.1s;
-              /* display: inline-block; */
-              /* display: flex; */
-          }
-          
-          .itemSwitchButton:active {}
-          
-          .sideContainer {
-              border: 1px solid rgba(0, 0, 0, 0);
-              padding-bottom: .5%;
-              /* margin: 0% 0.25% 0.5% 0.25%; */
-              background-color: antiquewhite;
-              color: black;
-              margin-left: 0;
-              margin-right: 0;
-              margin-top: .5%;
-              margin-bottom: .5%;
-              /* width: 49%; */
-              /* height: 25vh; */
-              /* height: 25vh; */
-              /* padding: 100%; */
-              /* flex-wrap: wrap; */
-          }
-          /* SCROLLBAR */
-          
-          body::-webkit-scrollbar {
-              /* background-color: #ffffff; */
-              /* width: 10vw; */
-              /* color: #8b0f6c; */
-          }
-          
-           ::-webkit-scrollbar-button {}
-          
-           ::-webkit-scrollbar {
-              width: 10px;
-              border: rgb(0, 0, 0) 1px solid;
-              /* position: absolute; */
-          }
-          /* Track */
-          
-           ::-webkit-scrollbar-track {
-              /* background: #f1f1f1; */
-          }
-          /* Handle */
-          
-           ::-webkit-scrollbar-thumb {
-              background: rgb(235, 156, 156);
-          }
-          /* Handle on hover */
-          
-           ::-webkit-scrollbar-thumb:hover {
-              background: rgb(255, 255, 255);
-              transition: all 1s;
-          }
-          /* SCROLLBAR */
-          
-          .sideContainer p {
-              /* margin: 1%; */
-              /* padding: 5%; */
-          }
-          
-          .sideContainer:hover {
-              border: 1px solid black;
-              transition: all 0.1s;
-          }
-          
-          .sideContainer:active {
-              border: 1px solid rgb(255, 255, 255);
-              transition: all 0.1s;
-          }
-          
-          .buyProduct {
-              color: black;
-              font-weight: bold;
-              text-decoration: none;
-          }
-          
-          .sideContainerImg {
-              width: auto;
-              height: auto;
-              max-width: 10vw;
-              /* max-height: 5vh; */
-          }
-          
-          .aboutItem {
-              background-color: antiquewhite;
-              padding: 2% 2%;
-              color: black;
-          }
-          
-          .fullscreenImg {
-              width: 100%;
-              height: 100%;
-          }
-          
-          .normalSizeImg {}
-          
-          .produitsHtmlBody a {
-              text-decoration: none;
-          }
-          
-          .previousAndNextWorkButton {
-              background-color: #ffffff;
-              border: 1px solid #ffffff;
-              /* display: inline-block; */
-              cursor: pointer;
-              color: #000000;
-              font-weight: bold;
-              padding: 1.2%;
-              position: absolute;
-              top: 40%;
-              /* padding: 16px 31px; */
-          }
-          
-          .rightNextWorkButton {
-              right: 14%;
-          }
-          
-          .previousAndNextWorkButton:visited {
-              color: black;
-          }
-          
-          .previousAndNextWorkButton:hover {
-              /* background-color: #00000000; */
-              border: solid 1px black;
-          }
-          
-          .previousAndNextWorkButton:active {
-              /* position: relative; */
-              /* top: 1px; */
-          }
-          /* PRODUITS.HMTL END */
